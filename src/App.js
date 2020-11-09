@@ -1,11 +1,19 @@
+import React, { Component } from 'react';
+import Content from './content/Content';
 
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-     </div>
-  );
+
+
+class App extends Component{
+  render() {
+    return (
+      <div>
+        
+        <Content />
+      
+      </div>
+    );
+  }
 }
-//testgit coba lagi
+
 export default App;
