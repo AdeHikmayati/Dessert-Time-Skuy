@@ -5,16 +5,16 @@ import './App.css';
 import Content from './content/Content';
 import MyForm from './contact-form/MyForm'
 
+
 class App extends Component{
   render() {
     return(
       <div className="App">
       <Header />
         <Content />
-        <div>
-          <MyForm />
-          </div>
-        </div>
+        <MyForm />
+          
+      </div>
     );
   }
 }
