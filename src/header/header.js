@@ -11,17 +11,17 @@ import {Carousel} from 'react-bootstrap';
 export default function Header(props) {
   return(
     <header>
-    <Navbar bg="dark" expand="lg" variant="dark">
-      <Navbar.Brand href="#home">DTS</Navbar.Brand>
+    <Navbar style={navbar}>
+      <Navbar.Brand href="#home" style={{ color: '#9B209B' }}>DTS</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-        <Nav.Link href="">Home</Nav.Link>
-      <Nav.Link href="#link">Menu</Nav.Link>
+        <Nav.Link href="" style={{ color: '#9B209B' }}>Home</Nav.Link>
+      <Nav.Link href="#link" style={{ color: '#9B209B' }}>Menu</Nav.Link>
       </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-success">Search</Button>
+        <Button variant="dark">Search</Button>
     </Form>
      </Navbar.Collapse>
     </Navbar>
@@ -32,7 +32,7 @@ export default function Header(props) {
       src="https://cdn.pixabay.com/photo/2015/04/01/20/06/chocolate-702939_1280.jpg"
       alt="First slide" fluid/>
     <Carousel.Caption>
-      <h3>WELCOME</h3>
+      <h1>WELCOME</h1>
       <p>Dessert Time Skuy</p>
     </Carousel.Caption>
     </Carousel.Item>
@@ -52,3 +52,4 @@ export default function Header(props) {
     </header>
   );
 }
+const navbar = {backgroundColor: '#F0E7F0'};
