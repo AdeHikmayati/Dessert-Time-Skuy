@@ -13,7 +13,7 @@ class Content extends Component{
     }
 
     getPostApi = () => {
-        axios.get(' http://localhost:3004/posts')
+        axios.get('http://localhost:3004/posts')
         .then((res) => {
              //console.log(res.data);
             this.setState({
