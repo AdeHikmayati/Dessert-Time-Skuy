@@ -1,12 +1,13 @@
 import React from 'react'
 
+
 const Post = (props) => {
     return (
         
         <div className="container">
             <div>
              
-        <div className="post" onClick={()=> props.open(props.data.idMeal)}>
+        <div className="post" onClick={()=>props.open(props.data.idMeal)}>
                     <div className="img-thumb">
                         <img src={props.data.strMealThumb} alt="Dessert Pie" />
                      </div>
