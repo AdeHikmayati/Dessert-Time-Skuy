@@ -12,8 +12,7 @@ const Ingredient = () => {
                      </div>
                     <div className="content">
                 <p className="title">Ingredient</p>
-                {/* <p className="desc"> {props.data.strMealThumb} </p> */}
-              {/* <button className="remove" onClick= {()=> props.remove(props.data.id)}>Remove</button> */}
+              
                     </div>
 
                 </div>
