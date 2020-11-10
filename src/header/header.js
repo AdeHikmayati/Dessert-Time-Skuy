@@ -32,8 +32,8 @@ export default function Header(props) {
       src="https://cdn.pixabay.com/photo/2015/04/01/20/06/chocolate-702939_1280.jpg"
       alt="First slide" fluid/>
     <Carousel.Caption>
-      <h1>WELCOME</h1>
-      <p>Dessert Time Skuy</p>
+      <h1><strong>WELCOME</strong></h1>
+      <p><strong>Dessert Time Skuy</strong></p>
     </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -44,8 +44,8 @@ export default function Header(props) {
     />
 
     <Carousel.Caption>
-      <h3>Selamat Mencoba</h3>
-      <p>Resep Dessert Kami </p>
+      <h3><strong>Selamat Mencoba</strong></h3>
+      <p><strong>Resep Dessert Kami</strong> </p>
     </Carousel.Caption>
   </Carousel.Item>
     </Carousel>

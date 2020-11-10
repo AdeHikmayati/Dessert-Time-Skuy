@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Content from './content/Content';
 import MyForm from './contact-form/MyForm'
-
+import Footer from './footer/Footer'
 
 class App extends Component{
   render() {
@@ -13,6 +13,7 @@ class App extends Component{
       <Header />
         <Content />
         <MyForm />
+        <Footer />
           
       </div>
     );
