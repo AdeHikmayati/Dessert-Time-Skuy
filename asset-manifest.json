@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Dessert-Time-Skuy/static/css/main.11c8bb21.chunk.css",
+    "main.js": "/Dessert-Time-Skuy/static/js/main.8e3efdb5.chunk.js",
+    "main.js.map": "/Dessert-Time-Skuy/static/js/main.8e3efdb5.chunk.js.map",
+    "runtime-main.js": "/Dessert-Time-Skuy/static/js/runtime-main.798676b2.js",
+    "runtime-main.js.map": "/Dessert-Time-Skuy/static/js/runtime-main.798676b2.js.map",
+    "static/css/2.000091ca.chunk.css": "/Dessert-Time-Skuy/static/css/2.000091ca.chunk.css",
+    "static/js/2.ae0dfbe9.chunk.js": "/Dessert-Time-Skuy/static/js/2.ae0dfbe9.chunk.js",
+    "static/js/2.ae0dfbe9.chunk.js.map": "/Dessert-Time-Skuy/static/js/2.ae0dfbe9.chunk.js.map",
+    "static/js/3.d1c1d687.chunk.js": "/Dessert-Time-Skuy/static/js/3.d1c1d687.chunk.js",
+    "static/js/3.d1c1d687.chunk.js.map": "/Dessert-Time-Skuy/static/js/3.d1c1d687.chunk.js.map",
+    "index.html": "/Dessert-Time-Skuy/index.html",
+    "static/css/2.000091ca.chunk.css.map": "/Dessert-Time-Skuy/static/css/2.000091ca.chunk.css.map",
+    "static/css/main.11c8bb21.chunk.css.map": "/Dessert-Time-Skuy/static/css/main.11c8bb21.chunk.css.map",
+    "static/js/2.ae0dfbe9.chunk.js.LICENSE.txt": "/Dessert-Time-Skuy/static/js/2.ae0dfbe9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.798676b2.js",
+    "static/css/2.000091ca.chunk.css",
+    "static/js/2.ae0dfbe9.chunk.js",
+    "static/css/main.11c8bb21.chunk.css",
+    "static/js/main.8e3efdb5.chunk.js"
+  ]
+}
