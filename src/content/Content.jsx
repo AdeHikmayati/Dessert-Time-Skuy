@@ -7,21 +7,41 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 class Content extends Component{
-    state = {
-        post: []
-        
+    // state = {
+    //     meals: []
+    // };
+    constructor(props) {
+        super(props)
+        this.state = {
+            meals: []
+        };
     }
+            
+     
 
-    getPostApi = () => {
-        axios.get('http://localhost:3004/posts')
-        .then((res) => {
-             //console.log(res.data);
+    getPostApi() {
+        axios.get("https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert")
+            .then(res => res.data.meals.map(post => ({
+                idMeal: `${post.idMeal}`,
+                strMeal: `${post.strMeal}`,
+                strMealThumb: `${post.strMealThumb}`
+            }))
+        )
+        .then(meals => {
             this.setState({
-                post: res.data
-            })
-    })
-        
+              meals,
+              
+            });
+          })
     }
+    //             const meals = res.data;
+    //          //console.log(res.data);
+    //         this.setState({
+    //             meals
+    //         })
+    // })
+        
+    // }
     handleOpen = (data => {
         console.log(data)
         //  <Ingredient />;
@@ -34,26 +54,31 @@ class Content extends Component{
         this.getPostApi();
         
     }
-    render() {
-        return (
-            <Fragment>
-                <p className="section-title">MENU</p>
-                <div className="content-wrapper">
-                {
-                    this.state.post.map(post =>{
-                        return <Post
-                            key={post.idMeal}
-                           data={post}
+        render() {
+            const { meals } = this.state;
+            return (
+                <Fragment>
+                    <p className="section-title">MENU</p>
+                    <div className="content-wrapper">
+                        {
+                            meals.map(post => {
+                                const { idMeal, strMeal, strMealThumb } = post;
+                                return (<Post
+                                    key={post.idMeal}
+                                    data={post}
                         
-                            open={this.handleOpen}
-                        />
-                    })
-                    }
+                                    open={this.handleOpen}
+                                />
+                                );
+                            })
+        }
+                    
                     </div>
                 
-            </Fragment>
-        )
+                </Fragment>
+            );
+        }
     }
-}
+
 
 export default Content;
